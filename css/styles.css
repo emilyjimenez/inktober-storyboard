@@ -1,0 +1,11 @@
+body {
+  height: 2000px;
+}
+
+.parallax-container {
+  height: 300px;
+}
+
+#stickytest {
+  position: sticky;
+}
