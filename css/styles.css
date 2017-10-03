@@ -13,6 +13,13 @@ h3, h1, h4, h2 {
   color: #e2665a;
 }
 
+h3 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 70px;
+}
 
 #mediabuttons {
   text-align: center;
