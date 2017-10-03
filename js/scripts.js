@@ -1,37 +1,35 @@
 $(document).ready(function(){
   // $('.parallax').parallax();
-  // var offset=$("#stickytest").offset();
-  // $(window).scroll(function(event){
-  //   var st = $(this).scrollTop();
-  //      console.log($(document).height()/4);
-  //
-  //   $("#stickytest").css("left", offset.left - st);
-  //   $("#stickytest").css("left", st + offset.left);
-  //   $("#stickytest").css("top", st + offset.top);
-  // })
-  var scrollheight = $(document).height();
-  var windowheight = $(window).height();
 
 
-
+  var scrollHeight = $(document).height();
+  var windowWidth = ($(window).width());
+  var windowHeight = $(window).height()/1.25;
   $(window).scroll(function(event){
-    $('.scrollspy').scrollSpy();
+    // $("#penimg").animate({opacity: 1}, 800, function(){});
     var scrollTop = $(window).scrollTop();
-    var scrollamount = (scrollTop / (scrollheight-windowheight)) * 100;
-    // if( scrollamount > 50) {
-    //   $("#stickytest").css("right", "auto");
-    //   console.log("what");
-    // } else {
-    $("#stickytest").css("left", scrollamount + "%");
-    // }
+    var scrollAmount = (scrollTop / (scrollHeight - windowHeight));
+    // console.log(Math.sin(scrollAmount * (Math.PI)));
+    var moveTop = 10 + Math.round(Math.sin(scrollAmount * (Math.PI)/2) * windowHeight);
+    var moveLeft = Math.round(Math.sin(scrollAmount * (Math.PI)) * windowWidth);
+
+    // $("#penimg").css("top", 10 + Math.round(Math.sin(scrollAmount * (Math.PI)/2) * windowHeight));
+    // $("#penimg").css("left", Math.round(Math.sin(scrollAmount * (Math.PI)) * windowWidth));
+
+    if (moveTop > 980) {
+      $("#penimg").css("top", 980);
+    } else {
+      $("#penimg").css("top", Math.round(Math.sin(scrollAmount * (Math.PI)/2) * windowHeight));
+    }
+    if (moveLeft < 150) {
+      $("#penimg").css("left", 150);
+    } else {
+      $("#penimg").css("left", Math.round(Math.sin(scrollAmount * (Math.PI)) * windowWidth));
+    }
+    // $("#stickytest").css("top", (Math.sin((scrollAmount) * 90) * windowWidth));
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 750) {
+        $("#penimg").css("top", 750);
+        $("#penimg").css("left", 150);
+      }
   });
-  // var offset=$("#stickytest").offset();
-  // $(window).scroll(function(event){
-  //   var st = $(this).scrollTop();
-  //      console.log($(document).height()/4);
-  //
-  //   $("#stickytest").css("left", offset.left - st);
-  //   $("#stickytest").css("left", st + offset.left);
-  //   $("#stickytest").css("top", st + offset.top);
-  // })
 });
