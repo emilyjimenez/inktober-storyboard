@@ -40,20 +40,11 @@ h1 {
 
 #penimg {
   position: fixed;
-<<<<<<< HEAD
-  top: 10%;
-  left: 10%;
-  filter: hue-rotate(50%);
-  height: 150px;
-  width: 150px;
-  z-index: -1;
-=======
   left: 0px;
   top: 10px;
   height: 100px;
   width: 100px;
   transition-duration: 500ms;
->>>>>>> scroll
 }
 
 .container {
@@ -93,7 +84,7 @@ h1 {
   background-color: black;
   padding: 50px;
   float: left;
-  text-align: center; 
+  text-align: center;
 }
 #pod h2 {
   color: #fff;
