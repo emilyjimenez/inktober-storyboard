@@ -15,13 +15,13 @@ h3 {
   height: 300px;
 }
 
-#stickytest {
+#penimg {
   position: fixed;
-  top: 13%;
-  left: 78%;
-  filter: invert(100%);
-  height: 150px;
-  width: 150px;
+  left: 0px;
+  top: 10px;
+  height: 100px;
+  width: 100px;
+  transition-duration: 500ms;
 }
 
 main {
@@ -35,6 +35,6 @@ main {
   color: white;
 }
 
-#pen {
-  filter: invert(100%);
+/*#pen {
+  filter: invert(100%);*/
 }
