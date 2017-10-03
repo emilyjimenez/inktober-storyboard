@@ -3,12 +3,35 @@
 
 body {
   height: 2000px;
+  color: #757575;
+  /*background-image: url("../img/inksplotch.jpg");*/
 
 }
 
-h3 {
+h3, h1, h4, h2 {
   font-family: 'Amatic SC', cursive;
+  color: #e2665a;
+}
 
+#mediabuttons {
+  text-align: center;
+}
+
+img.social {
+  width: 40px;
+}
+
+a {
+  color: #e2665a;
+}
+h4 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  color: #000000;
 }
 
 .parallax-container {
@@ -17,24 +40,109 @@ h3 {
 
 #stickytest {
   position: fixed;
-  top: 13%;
-  left: 78%;
-  filter: invert(100%);
+  top: 10%;
+  left: 10%;
+  filter: hue-rotate(50%);
   height: 150px;
+  width: 150px;
+  z-index: -1;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#instagram h3 {
+  color: #000000;
+}
+
+/*.well {
+  background-color: black;
+  color: white;
+}*/
+
+
+#rules, #prompts {
+  width: 60%;
+  float: left;
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+#toc {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+#pod {
+  width: 35%;
+  background-color: black;
+  padding: 50px;
+  float: left;
+  text-align: center; 
+}
+#pod h2 {
+  color: #fff;
+}
+#about, #tips {
+  width: 60%;
+  float: right;
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+
+}
+
+#inktoberpic {
   width: 150px;
 }
 
-main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+#instagram {
+  width: 100%;
+  text-align: center;
+  clear: both;
 }
 
-.well {
+/*.row {
+  padding: 25px;
+}*/
+
+#tips ul li {
+  list-style-type: circle;
+  padding-bottom: 15px;
+  margin-left: 30px;
+}
+
+footer {
   background-color: black;
-  color: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
-#pen {
-  filter: invert(100%);
+.redcolor {
+  color: #e2665a;
 }
+
+#toc li {
+  display: inline;
+}
+/*#pen {
+  filter: invert(100%);
+  left: 10
+}*/
+
+/*.inner {
+  width: 150px;
+  height: 100px;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  background: red;
+}*/
