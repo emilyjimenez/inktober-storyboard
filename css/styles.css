@@ -4,6 +4,8 @@
 body {
   height: 2000px;
   color: #757575;
+  font-size: 18px;
+  line-height: 32px;
   /*background-image: url("../img/inksplotch.jpg");*/
 
 }
@@ -11,6 +13,7 @@ body {
 h3, h1, h4, h2 {
   font-family: 'Amatic SC', cursive;
   color: #e2665a;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -20,6 +23,7 @@ h3 {
 h2 {
   font-size: 70px;
 }
+
 
 #mediabuttons {
   text-align: center;
@@ -34,10 +38,11 @@ a {
 }
 h4 {
   text-align: center;
+  font-size: 50px;
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 250px;
   text-align: center;
   color: #000000;
 }
@@ -72,7 +77,7 @@ h1 {
 }*/
 
 
-#rules, #prompts {
+#rules {
   width: 60%;
   float: left;
   background-color: #fff;
@@ -81,22 +86,28 @@ h1 {
   border-radius: 25px;
 }
 
+#prompts {
+  width: 60%;
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
 <<<<<<< HEAD
 #toc {
   width: 100%;
   text-align: center;
   padding: 20px;
+  font-family: 'Amatic SC', cursive;
 }
 
 #pod {
-  width: 35%;
-  background-color: black;
   padding: 50px;
-  float: left;
   text-align: center;
 }
 #pod h2 {
-  color: #fff;
+  color: #000;
 }
 #about, #tips {
   width: 60%;
@@ -111,6 +122,8 @@ h1 {
   filter: invert(100%);*/
 >>>>>>> scroll
 }
+
+
 
 #inktoberpic {
   width: 150px;
@@ -132,6 +145,12 @@ h1 {
   margin-left: 30px;
 }
 
+
+#prompts ol li, #rules ol li {
+  list-style-type: decimal;
+  margin-left: 30px;
+}
+
 footer {
   background-color: black;
   padding: 25px;
@@ -143,8 +162,30 @@ footer {
   color: #e2665a;
 }
 
-#toc li {
+.poison {
+  color: #e2665a;
+  font-size: 120px;
+}
+
+#toc ul li {
+  font-size: 20px;
   display: inline;
+}
+
+#toc {
+  margin: auto;
+}
+
+ul.section {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+}
+
+ul.section a {
+  color: #757575;
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
 }
 /*#pen {
   filter: invert(100%);
