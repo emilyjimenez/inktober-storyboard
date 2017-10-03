@@ -13,6 +13,7 @@ h3, h1, h4, h2 {
   color: #e2665a;
 }
 
+
 #mediabuttons {
   text-align: center;
 }
@@ -84,7 +85,7 @@ h1 {
   background-color: black;
   padding: 50px;
   float: left;
-  text-align: center; 
+  text-align: center;
 }
 #pod h2 {
   color: #fff;
