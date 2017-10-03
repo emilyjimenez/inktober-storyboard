@@ -45,6 +45,7 @@ h1 {
   height: 100px;
   width: 100px;
   transition-duration: 500ms;
+  /*display: none;*/
 }
 
 .container {

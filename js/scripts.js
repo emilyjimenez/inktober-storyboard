@@ -6,7 +6,7 @@ $(document).ready(function(){
   var windowWidth = ($(window).width());
   var windowHeight = $(window).height()/1.25;
   $(window).scroll(function(event){
-
+    // $("#penimg").animate({opacity: 1}, 800, function(){});
     var scrollTop = $(window).scrollTop();
     var scrollAmount = (scrollTop / (scrollHeight - windowHeight));
     // console.log(Math.sin(scrollAmount * (Math.PI)));
@@ -27,7 +27,7 @@ $(document).ready(function(){
       $("#penimg").css("left", Math.round(Math.sin(scrollAmount * (Math.PI)) * windowWidth));
     }
     // $("#stickytest").css("top", (Math.sin((scrollAmount) * 90) * windowWidth));
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 750) {
         $("#penimg").css("top", 750);
         $("#penimg").css("left", 150);
       }
