@@ -38,14 +38,22 @@ h1 {
   height: 300px;
 }
 
-#stickytest {
+#penimg {
   position: fixed;
+<<<<<<< HEAD
   top: 10%;
   left: 10%;
   filter: hue-rotate(50%);
   height: 150px;
   width: 150px;
   z-index: -1;
+=======
+  left: 0px;
+  top: 10px;
+  height: 100px;
+  width: 100px;
+  transition-duration: 500ms;
+>>>>>>> scroll
 }
 
 .container {
@@ -73,6 +81,7 @@ h1 {
   border-radius: 25px;
 }
 
+<<<<<<< HEAD
 #toc {
   width: 100%;
   text-align: center;
@@ -97,6 +106,10 @@ h1 {
   margin-bottom: 20px;
   border-radius: 25px;
 
+=======
+/*#pen {
+  filter: invert(100%);*/
+>>>>>>> scroll
 }
 
 #inktoberpic {
