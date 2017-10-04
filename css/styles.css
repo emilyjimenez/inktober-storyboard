@@ -7,7 +7,6 @@ body {
   font-size: 18px;
   line-height: 32px;
   /*background-image: url("../img/inksplotch.jpg");*/
-
 }
 
 h3, h1, h4, h2 {
@@ -23,7 +22,6 @@ h3 {
 h2 {
   font-size: 70px;
 }
-
 
 #mediabuttons {
   text-align: center;
@@ -47,6 +45,8 @@ h1 {
   color: #000000;
 }
 
+
+
 .parallax-container {
   height: 300px;
 }
@@ -67,8 +67,13 @@ h1 {
   width: 60%;
 }
 
+.hover-color:hover {
+  color: #e2665a;
+}
+
 #instagram h3 {
   color: #000000;
+  padding-top: 60px;
 }
 
 /*.well {
@@ -82,8 +87,7 @@ h1 {
   float: left;
   background-color: #fff;
   padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 25px;
+  margin-bottom: 20px;<
 }
 
 #prompts {
@@ -91,7 +95,6 @@ h1 {
   background-color: #fff;
   padding: 25px;
   margin-bottom: 20px;
-  margin: auto;
 }
 
 <<<<<<< HEAD
@@ -162,9 +165,15 @@ footer {
   color: #e2665a;
 }
 
-.poison {
+.display-prompt {
   color: #e2665a;
   font-size: 120px;
+}
+
+.display-prompt:hover {
+text-decoration: underline;
+text-decoration-style: dotted;
+text-decoration-color: #e2665a;
 }
 
 #toc ul li {
@@ -200,3 +209,57 @@ ul.section a {
   left: 10%;
   background: red;
 }*/
+
+#img1 {
+width: 100%;
+margin-top: 150px;
+}
+
+#img2 {
+height: 400px;
+margin: auto;
+}
+
+#img3 {
+width: 350px;
+margin-top: 200px;
+}
+
+#img4 {
+width: 400px;
+}
+
+.wrapper p {
+position:relative;
+visibility:hidden;
+}
+
+.text {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  color: #e2665a;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.our-name {
+  text-align: center;
+  font-weight: bold;
+  color: #e2665a;
+  font-family: 'Amatic SC', cursive;
+  font-size: 133%;
+}
+
+.bubble {
+  border-style: solid;
+  border-color: red;
+  border-radius: 30px;
+  background-color: white;
+  height: 300px;
+  margin: 10px;
+  opacity: 0.5;
+}
+
+.bubble:hover {
+  opacity: 1.0;
+}

@@ -7,6 +7,14 @@ var m = n.getMonth();
 var d = n.getDate();
 //END Date Import part 1
 
+//FRONT END LOGIC - USER INTERFACE
+$(document).ready(function(){
+  // $('.parallax').parallax();
+
+//Kyle Testing Date Import part 2
+  document.getElementById("date").innerHTML = months[m] + " " + d + ", " + y; //Display current date
+//END part 2
+
 //Kyle change prompt on date part 1
 function dailyPrompt() {
     var prompt;
@@ -107,18 +115,9 @@ function dailyPrompt() {
         default:
             prompt = "Woops! Something went wrong. Please check the full prompt list for today's prompt.";
     }
-    document.getElementById("dailyPrompt").innerHTML = prompt;
+    document.getElementById("dayPrompt").innerHTML = prompt;
 }
 //END part 1
-
-
-//FRONT END LOGIC - USER INTERFACE
-$(document).ready(function(){
-  // $('.parallax').parallax();
-
-//Kyle Testing Date Import part 2
-  document.getElementById("date").innerHTML = "Today's Date: " + months[m] + " " + d + ", " + y; //Display current date
-//END part 2
 //Kyle change prompt on date part 2
   dailyPrompt(); //Call dailyPrompy function on current date
 //END part 2
@@ -152,5 +151,16 @@ $(document).ready(function(){
         $("#penimg").css("top", 750);
         $("#penimg").css("left", 150);
       }
+
+    //IMG HOVER TEXT CAPTION
+    $('.hover').mouseover(function() {
+      $('.text').css("visibility","visible");
+    });
+
+    $('.hover').mouseout(function() {
+      $('.text').css("visibility","hidden");
+    });
+    //END IMAGE HOVER
+    
   });
 });
