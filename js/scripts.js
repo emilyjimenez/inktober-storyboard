@@ -153,14 +153,17 @@ function dailyPrompt() {
       }
 
     //IMG HOVER TEXT CAPTION
-    $('.hover').mouseover(function() {
-      $('.text').css("visibility","visible");
-    });
-
-    $('.hover').mouseout(function() {
-      $('.text').css("visibility","hidden");
-    });
+    // $('.hover').mouseover(function() {
+    //   $('.text').css("visibility","visible");
+    // });
+    //
+    // $('.hover').mouseout(function() {
+    //   $('.text').css("visibility","hidden");
+    // });
     //END IMAGE HOVER
-    
+
+  });
+  $(".display-prompt").mouseover(function(){
+    $(".stroke").fadeIn(600);
   });
 });
