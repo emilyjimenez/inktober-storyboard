@@ -129,14 +129,25 @@ h1 {
   margin-bottom: 20px;<
 }
 
-#prompts {
-  width: 60%;
-  background-color: #fff;
-  padding: 25px;
-  margin-bottom: 20px;
+#prompts-display {
+  min-height: 600px;
 }
 
-<<<<<<< HEAD
+#prompts {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+#prompts h3 {
+  text-align: center;
+}
+
+.list-padding {
+  padding: 0 60px;
+}
+
 #toc {
   width: 100%;
   text-align: center;
@@ -158,11 +169,6 @@ h1 {
   padding: 25px;
   margin-bottom: 20px;
   border-radius: 25px;
-
-=======
-/*#pen {
-  filter: invert(100%);*/
->>>>>>> scroll
 }
 
 

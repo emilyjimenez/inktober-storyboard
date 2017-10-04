@@ -131,7 +131,7 @@ function dailyPrompt() {
   var todayDate = new Date();
   var dateNumber = todayDate.getDate();
 
-  for (var index = 0; index < dateNumber; index++) {
+  for (var index = 0; index < 31; index++) {
     if ( index % 2 === 0) {
       $("#even-boxes").append("<div class='prompt-box'>" +
                                    + (index + 1) + ". " + prompts[index] +
@@ -184,19 +184,24 @@ function dailyPrompt() {
     }
     // $("#stickytest").css("top", (Math.sin((scrollAmount) * 90) * windowWidth));
     if($(window).scrollTop() + $(window).height() > $(document).height() - 750) {
-        $("#penimg").css("top", 750);
-        $("#penimg").css("left", 150);
-      }
-
-    //IMG HOVER TEXT CAPTION
-    $('.hover').mouseover(function() {
-      $('.text').css("visibility","visible");
-    });
-
-    $('.hover').mouseout(function() {
-      $('.text').css("visibility","hidden");
-    });
-    //END IMAGE HOVER
-
+      $("#penimg").css("top", 750);
+      $("#penimg").css("left", 150);
+    }
   });
+
+  //IMG HOVER TEXT CAPTION
+  $('.hover').mouseover(function() {
+    $('.text').css("visibility","visible");
+  });
+
+  $('.hover').mouseout(function() {
+    $('.text').css("visibility","hidden");
+  });
+  //END IMAGE HOVER
+
+  $(".prompt-link").click(function(){
+    $("#all-boxes").fadeOut();
+    $("#prompts").fadeIn();
+  })
+
 });
