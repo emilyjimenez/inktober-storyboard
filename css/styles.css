@@ -11,6 +11,42 @@ body {
 .top-gradient {
   background: linear-gradient(to bottom right, white, black);
 }
+/*START prompt-box styling*/
+.boxes {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.first-odd-box {
+  height: 100px;
+  width: 100px;
+  opacity: 0.0;
+}
+.prompt-box {
+  height: 100px;
+  width: 200px;
+  margin-bottom: 100px;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
+  opacity: 0.0;
+  padding: 50px 0;
+}
+
+.prompt-info {
+  width: 100%;
+  font-weight: normal;
+}
+
+.prompt-link {
+  color: #e2665a;
+  font-weight: bolder;
+}
+
+/*END prompt-box styling*/
 
 h3, h1, h4, h2 {
   font-family: 'Amatic SC', cursive;
