@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
-
 body {
   height: 2000px;
   color: #757575;
   font-size: 18px;
   line-height: 32px;
   /*background-image: url("../img/inksplotch.jpg");*/
+}
+
+.top-gradient {
+  background: linear-gradient(white, black);
 }
 
 h3, h1, h4, h2 {
@@ -157,7 +160,6 @@ h1 {
 footer {
   background-color: black;
   padding: 25px;
-  margin-bottom: 20px;
   padding-top: 20px;
 }
 
@@ -255,7 +257,7 @@ visibility:hidden;
   border-color: red;
   border-radius: 30px;
   background-color: white;
-  height: 300px;
+  height: 350px;
   margin: 10px;
   opacity: 0.5;
 }

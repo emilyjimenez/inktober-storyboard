@@ -19,29 +19,36 @@
     <title>Inktober</title>
   </head>
   <body>
-    <h1><a href="http://mrjakeparker.com/inktober"><img id="inktoberpic" src="img/inktober.png"></a><span class="redcolor">Storyboard</span></h1>
+    <div class="top-gradient">
+      <h1><a href="http://mrjakeparker.com/inktober"><img id="inktoberpic" src="img/inktober-logo.png"></a><span class="redcolor">Storyboard</span></h1>
+
+      <div id="toc">
+      <!-- <h3>Table of Contents</h3> -->
+        <ul class="section table-of-contents">
+          <li><a class="hover-color"href="#about">About Inktober &nbsp;</a></li>
+          <li><a class="hover-color"href="#rules">&nbsp;Rules&nbsp;</a></li>
+          <li><a class="hover-color"href="#tips">&nbsp;Tips&nbsp;</a></li>
+          <li><a class="hover-color"href="#prompts">&nbsp;Prompts&nbsp;</a></li>
+          <li><a class="hover-color" href="#instagram">&nbsp;Instagram Feed</a></li>
+        </ul>
+      </div>
+
+      <div id="pod">
+        <h2>Prompt of the Day:</h2>
+       <!-- Currently the date MUST display somewhere for the daily prompt to work because it is reliant on it existing -->
+        <h3 id="date"></h3>
+        <h2 id="dayPrompt" class="display-prompt"></h2>
+      </div>
+    </div>
+
     <main>
       <div class="container">
         <img id="penimg" src="img/pen.png">
 
         <!-- <div class="well" id="toc"> -->
-        <div id="toc">
-        <!-- <h3>Table of Contents</h3> -->
-          <ul class="section table-of-contents">
-            <li><a class="hover-color"href="#about">About Inktober &nbsp;</a></li>
-            <li><a class="hover-color"href="#rules">&nbsp;Rules&nbsp;</a></li>
-            <li><a class="hover-color"href="#tips">&nbsp;Tips&nbsp;</a></li>
-            <li><a class="hover-color"href="#prompts">&nbsp;Prompts&nbsp;</a></li>
-            <li><a class="hover-color" href="#instagram">&nbsp;Instagram Feed</a></li>
-          </ul>
-        </div>
 
-        <div id="pod">
-          <h2>Prompt of the Day:</h2>
-         <!-- Currently the date MUST display somewhere for the daily prompt to work because it is reliant on it existing -->
-          <h3 id="date"></h3> 
-          <h2 id="dayPrompt" class="display-prompt"></h2>
-        </div>
+
+
 
         <!-- <div class="well"> -->
         <div class="row">
