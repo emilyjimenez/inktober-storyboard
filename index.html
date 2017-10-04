@@ -1,3 +1,9 @@
+<!-- IF YOU WANT TO USE A LIVESERVER THAT YOU DONT HAVE TO REFRESH THE PAGE EVERY TIME -->
+<!-- LIVE SERVER -->
+<!-- STEP ONE: Clone from https://github.com/tapio/live-server -->
+<!-- STEP TWO: Install: Type "npm install -g live-server" -->
+<!-- STEP THREE: Initiate live-server: Type "live-server" in terminal after enabling-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,7 +15,6 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
     <script src="js/scripts.js"></script>
     <title>Inktober</title>
   </head>
@@ -30,11 +35,11 @@
             <li><a class="hover-color" href="#instagram">&nbsp;Instagram Feed</a></li>
           </ul>
         </div>
-        <!-- ************PROMPTS DOES NOT LINK TO PROMPTS SECTION -->
 
         <div id="pod">
           <h2>Prompt of the Day:</h2>
-          <h3 id="date"></h3>
+         <!-- Currently the date MUST display somewhere for the daily prompt to work because it is reliant on it existing -->
+          <h3 id="date"></h3> 
           <h2 id="dayPrompt" class="display-prompt"></h2>
         </div>
 
