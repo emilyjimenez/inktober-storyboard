@@ -66,7 +66,23 @@ h1 {
   height: 100px;
   width: 100px;
   transition-duration: 500ms;
-  /*display: none;*/
+  z-index: 0;
+}
+
+#footerimg {
+  max-height: 400px;
+  min-height: 400px;
+  display: none;
+  position: relative;
+  z-index: -1;
+}
+
+footer {
+  position:absolute;
+  background-color: black;
+  padding: 25px;
+  padding-top: 20px;
+  z-index: -2;
 }
 
 .container {
@@ -115,7 +131,7 @@ h1 {
   font-size: 85px;
 }
 
-<<<<<<< HEAD
+
 #toc {
   width: 100%;
   text-align: center;
@@ -151,13 +167,6 @@ img.stroke {
   width: 53%;
 }
 
-=======
-/*#pen {
-  filter: invert(100%);*/
->>>>>>> scroll
-
-
-
 
 #inktoberpic {
   width: 150px;
@@ -188,12 +197,6 @@ img.stroke {
 #rules ol li {
   list-style-type: decimal;
   margin-left: 30px;
-}
-
-footer {
-  background-color: black;
-  padding: 25px;
-  padding-top: 20px;
 }
 
 .redcolor {
@@ -325,5 +328,3 @@ visibility:hidden;
 .bubble:hover {
   opacity: 1.0;
 }
-
-@media (min-width: )
