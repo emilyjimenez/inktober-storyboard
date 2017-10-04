@@ -8,10 +8,6 @@ body {
   /*background-image: url("../img/inksplotch.jpg");*/
 }
 
-.top-gradient {
-  background: linear-gradient(to bottom right, white, black);
-}
-
 h3, h1, h4, h2 {
   font-family: 'Amatic SC', cursive;
   color: #e2665a;
@@ -212,24 +208,42 @@ ul.section a {
   background: red;
 }*/
 
+/* KYLE IMAGES
 #img1 {
 width: 100%;
 margin-top: 150px;
 }
+<div id="wrapper1" class="col-md-4">
+  <img id="img1" class="hover" src="img/katie-bear.png" alt="Ink drawing">
+  <p class="text">Drawing by: Katie Pikes</p>
+</div>
 
 #img2 {
 height: 400px;
 margin: auto;
 }
+<div class="wrapper col-md-4">
+  <img id="img2" class="hover" src="img/katie-diamond.png" alt="Ink drawing">
+  <p class="text">Drawing by: Katie Pikes</p>
+</div>
+
 
 #img3 {
 width: 350px;
 margin-top: 200px;
 }
+<div class="wrapper col-md-4">
+  <img id="img3" class="hover" src="img/katie-mountain.png" alt="Ink drawing">
+  <p class="text">Drawing by: Katie Pikes</p>
+</div>
 
 #img4 {
 width: 400px;
 }
+<div class="wrapper col-md-4">
+  <img id="img4" class="hover"src="img/katie-biner.png" alt="Ink drawing">
+  <p class="text">Drawing by: Katie Pikes</p>
+</div>
 
 .wrapper p {
 position:relative;
@@ -243,6 +257,7 @@ visibility:hidden;
   font-size: 150%;
   font-weight: bold;
 }
+*/
 
 .our-name {
   text-align: center;
