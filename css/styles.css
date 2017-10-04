@@ -63,22 +63,6 @@ h1 {
   z-index: 0;
 }
 
-#footerimg {
-  max-height: 400px;
-  min-height: 400px;
-  display: none;
-  position: relative;
-  z-index: -1;
-}
-
-footer {
-  position:absolute;
-  background-color: black;
-  padding: 25px;
-  padding-top: 20px;
-  z-index: -2;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -288,14 +272,14 @@ visibility:hidden;
 
 
 .our-name {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   color: #e2665a;
   font-family: 'Amatic SC', cursive;
-  font-size: 133%;
+  font-size: 30px;
 }
 
-.bubble {
+/*.bubble {
   border-style: solid;
   border-color: red;
   border-radius: 30px;
@@ -303,8 +287,48 @@ visibility:hidden;
   height: 350px;
   margin: 10px;
   opacity: 0.5;
+}*/
+
+.blurb {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .bubble:hover {
   opacity: 1.0;
+}
+
+.footer-spacing {
+  margin-left: 300px;
+  color: #f2f2f2;
+}
+
+
+
+#footerimg {
+  max-height: 400px;
+  min-height: 400px;
+  display: none;
+  position: relative;
+  z-index: -1;
+}
+
+footer {
+  position:absolute;
+  background-color: black;
+  padding: 25px;
+  padding-top: 20px;
+  z-index: -2;
+}
+
+h4.aboutHeadline {
+  text-align: right;
+  padding-right: 30px;
+  font-size: 80px;
+  z-index: 1;
 }
