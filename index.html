@@ -10,11 +10,13 @@
     <link href="css/juicer.css" media="all" rel="stylesheet" type="text/css">
     <link href="https://assets.juicer.io/application-ca4b223053165afac7c29399220005bb6aa38e5059003c33438c283c2b53cd18.css" rel="stylesheet" type="text/css">
     <script src="js/juicer.js" type="text/javascript"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Below is for the shaking animation. -->
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="tilt.jquery.js"></script>
     <script src="js/scripts.js"></script>
     <title>Inktober</title>
   </head>
@@ -114,12 +116,35 @@
         </div>
         <!-- </div> -->
 
-        <!-- <div class="well"> -->
-        <div class="row">
-          <div id="prompts" class="section scrollspy">
+        <div class="row" id="prompts-display">
+          <div class="container" id="all-boxes">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="prompt-box prompt-info">
+                  Prompts so far ...
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6" id="even-boxes">
+              </div>
+              <div class="col-md-6" id="odd-boxes">
+                <div class="first-odd-box">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="prompt-box prompt-info">
+                  ... Or click <span class="prompt-link">HERE</span> to see all prompts.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section scrollspy"  id="prompts">
             <h3>Prompts</h3>
             <ol>
-              <div class="col-md-4">
+              <div class="col-md-4 list-padding">
                 <li>Swift</li>
                 <li>Divided</li>
                 <li>Poison</li>
@@ -131,7 +156,7 @@
                 <li>Screech</li>
                 <li>Gigantic</li>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 list-padding">
                 <li>Run</li>
                 <li>Shattered</li>
                 <li>Teeming</li>
@@ -143,7 +168,7 @@
                 <li>Cloud</li>
                 <li>Deep</li>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 list-padding">
                 <li>Furious</li>
                 <li>Trail</li>
                 <li>Juicy</li>
@@ -157,6 +182,11 @@
                 <li>Mask</li>
               </div>
             </ol>
+            <div class="row">
+              <div class="col-md-12">
+                <span class="prompt-link2"><h4>Go Back</h4></span>
+              </div>
+            </div>
           </div>
         </div>
         <!-- </div> -->

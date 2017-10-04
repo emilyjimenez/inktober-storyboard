@@ -122,10 +122,47 @@ function dailyPrompt() {
   dailyPrompt(); //Call dailyPrompy function on current date
 //END part 2
 
-  var scrollHeight = $(document).height();
-  var windowWidth = ($(window).width());
-  var windowHeight = $(window).height()/1.25;
+  var prompts = ["swift", "divided", "poison", "underwater", "long", "sword",
+            "shy", "crooked", "screech", "gigantic", "run", "shattered",
+            "teeming", "fierce", "mystery", "fat", "graceful", "filthy",
+            "cloud", "deep", "furious", "trail", "juicy", "blind", "ship",
+            "squeak", "climb", "fall", "united", "found", "mask"];
+
+  var todayDate = new Date();
+  var dateNumber = todayDate.getDate();
+
+  for (var index = 0; index < 31; index++) {
+    if ( index % 2 === 0) {
+      $("#even-boxes").append("<div class='prompt-box'>" +
+                                   + (index + 1) + ". " + prompts[index] +
+                                "</div>");
+    } else {
+      $("#odd-boxes").append("<div class='prompt-box'>" +
+                                 + (index + 1) + ". " + prompts[index] +
+                              "</div>");
+    }
+  }
+
+  $(window).scroll(function() {
+    $(".prompt-box").each(function() {
+      var boxTopPosition = $(this).offset().top;
+      var boxOuterHeight = $(this).outerHeight();
+      var windowFractionHeight = $(window).height()*0.66;
+      var windowScrollTop = $(window).scrollTop();
+      if (windowScrollTop > (boxTopPosition+boxOuterHeight-windowFractionHeight)){
+        $(this).animate({
+          opacity: 1,
+        }, 1200, function() {
+        }).addClass('animated pulse');
+      }
+    });
+  });
+
+
   $(window).scroll(function(event){
+    var scrollHeight = $(document).height();
+    var windowWidth = ($(window).width());
+    var windowHeight = $(window).height()/1.25;
     // $("#penimg").animate({opacity: 1}, 800, function(){});
     var scrollTop = $(window).scrollTop();
     var scrollAmount = (scrollTop / (scrollHeight - windowHeight));
@@ -148,22 +185,31 @@ function dailyPrompt() {
     }
     // $("#stickytest").css("top", (Math.sin((scrollAmount) * 90) * windowWidth));
     if($(window).scrollTop() + $(window).height() > $(document).height() - 750) {
-        $("#penimg").css("top", 750);
-        $("#penimg").css("left", 150);
-      }
-      if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
-        $("#footerimg").fadeIn("slow");
-      }
-
-    //IMG HOVER TEXT CAPTION
-    $('.hover').mouseover(function() {
-      $('.text').css("visibility","visible");
-    });
-
-    $('.hover').mouseout(function() {
-      $('.text').css("visibility","hidden");
-    });
-    //END IMAGE HOVER
-
+      $("#penimg").css("top", 750);
+      $("#penimg").css("left", 150);
+    }
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+      $("#footerimg").fadeIn("slow");
+    }
   });
+  //IMG HOVER TEXT CAPTION
+  $('.hover').mouseover(function() {
+    $('.text').css("visibility","visible");
+  });
+
+  $('.hover').mouseout(function() {
+    $('.text').css("visibility","hidden");
+  });
+  //END IMAGE HOVER
+
+  $(".prompt-link").click(function(){
+    $("#all-boxes").fadeOut();
+    $("#prompts").fadeIn();
+  })
+
+  $(".prompt-link2").click(function(){
+    $("#prompts").fadeOut();
+    $("#all-boxes").fadeIn();
+  })
+
 });
