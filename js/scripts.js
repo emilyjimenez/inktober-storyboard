@@ -151,6 +151,9 @@ function dailyPrompt() {
         $("#penimg").css("top", 750);
         $("#penimg").css("left", 150);
       }
+      if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+        $("#footerimg").fadeIn("slow");
+      }
 
     //IMG HOVER TEXT CAPTION
     // $('.hover').mouseover(function() {
