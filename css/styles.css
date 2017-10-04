@@ -39,11 +39,31 @@ body {
 
 .prompt-link, .prompt-link2 {
   color: #e2665a;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .prompt-link:hover, .prompt-link2:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+#prompts-display {
+  /*min-height: 600px;*/
+}
+
+#prompts {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+#prompts h3 {
+  text-align: center;
+}
+
+.list-padding {
+  padding: 0 60px;
 }
 
 /*END prompt-box styling*/
@@ -70,24 +90,19 @@ img.social {
   width: 40px;
 }
 
-a {
-  color: #e2665a;
-}
-h4 {
-  text-align: center;
-  font-size: 50px;
-}
-
 h1 {
   font-size: 250px;
   text-align: center;
   color: #000000;
 }
 
+a {
+  color: #e2665a;
+}
 
-
-.parallax-container {
-  height: 300px;
+h4 {
+  text-align: center;
+  font-size: 50px;
 }
 
 #penimg {
@@ -131,11 +146,6 @@ footer {
   padding-top: 60px;
 }
 
-/*.well {
-  background-color: black;
-  color: white;
-}*/
-
 
 #rules {
   width: 60%;
@@ -143,25 +153,6 @@ footer {
   background-color: #fff;
   padding: 25px;
   margin-bottom: 20px;<
-}
-
-#prompts-display {
-  min-height: 600px;
-}
-
-#prompts {
-  width: 100%;
-  padding: 25px;
-  margin-bottom: 20px;
-  display: none;
-}
-
-#prompts h3 {
-  text-align: center;
-}
-
-.list-padding {
-  padding: 0 60px;
 }
 
 #toc {
