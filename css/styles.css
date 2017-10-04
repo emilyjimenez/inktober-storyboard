@@ -9,7 +9,7 @@ body {
 }
 
 .top-gradient {
-  background: linear-gradient(white, black);
+  background: linear-gradient(to bottom right, white, black);
 }
 
 h3, h1, h4, h2 {
