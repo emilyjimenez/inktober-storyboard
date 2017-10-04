@@ -1,12 +1,13 @@
 //BACK END LOGIC
-//Kyle Testing Date Import 1
+//Kyle Date Import part 1
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 var n = new Date();
 var y = n.getFullYear();
 var m = n.getMonth();
 var d = n.getDate();
-//END Date Import 1
+//END Date Import part 1
 
+//Kyle change prompt on date part 1
 function dailyPrompt() {
     var prompt;
     switch (new Date().getDate()) {
@@ -108,16 +109,19 @@ function dailyPrompt() {
     }
     document.getElementById("dailyPrompt").innerHTML = "Today's Prompt: " + prompt;
 }
+//END part 1
 
 
 //FRONT END LOGIC - USER INTERFACE
 $(document).ready(function(){
   // $('.parallax').parallax();
 
-//Kyle Testing Date Import 2
+//Kyle Testing Date Import part 2
   document.getElementById("date").innerHTML = "Today's Date: " + months[m] + " " + d + ", " + y; //Display current date
+//END part 2
+//Kyle change prompt on date part 2
   dailyPrompt(); //Call dailyPrompy function on current date
-//END Date Import 2
+//END part 2
 
   var scrollHeight = $(document).height();
   var windowWidth = ($(window).width());
