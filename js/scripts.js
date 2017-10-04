@@ -211,5 +211,4 @@ function dailyPrompt() {
     $("#prompts").fadeOut();
     $("#all-boxes").fadeIn();
   })
-
 });

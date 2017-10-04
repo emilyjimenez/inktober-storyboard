@@ -5,6 +5,10 @@ body {
   color: #757575;
   font-size: 18px;
   line-height: 32px;
+  /*background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
+  background-repeat: no-repeat, no-repeat; no-repeat;
+  background-position: 0% 15%, 80% 26%, 18% 34%;
+  background-size: auto, 20%, 20%;*/
   /*background-image: url("../img/inksplotch.jpg");*/
 }
 /*START prompt-box styling*/
@@ -51,7 +55,7 @@ body {
   /*min-height: 600px;*/
 }
 
-#prompts {
+/*#prompts {
   width: 100%;
   padding: 25px;
   margin-bottom: 20px;
@@ -60,13 +64,17 @@ body {
 
 #prompts h3 {
   text-align: center;
-}
+}*/
 
 .list-padding {
   padding: 0 60px;
 }
 
 /*END prompt-box styling*/
+
+p {
+  padding-bottom: 10px;
+}
 
 h3, h1, h4, h2 {
   font-family: 'Amatic SC', cursive;
@@ -83,11 +91,12 @@ h2 {
 }
 
 #mediabuttons {
-  text-align: center;
+  text-align: left;
+  padding-top: 20px;
 }
 
 img.social {
-  width: 40px;
+  width: 33px;
 }
 
 h1 {
@@ -131,10 +140,22 @@ footer {
   z-index: -2;
 }
 
+.container-prompts{
+  padding-right: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
+  background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0% 3%, 95% 16%, 0% 27%;
+  background-size: 40%, 40%, 40%;
 }
 
 .hover-color:hover {
@@ -148,12 +169,26 @@ footer {
 
 
 #rules {
-  width: 60%;
-  float: left;
-  background-color: #fff;
+  width: 70%;
   padding: 25px;
-  margin-bottom: 20px;<
+  margin-bottom: 20px;
+  margin-left: 30px;
 }
+
+#prompts {
+  width: 70%;
+  padding: 25px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  margin: auto;
+  clear:both;
+}
+
+#prompts h3 {
+  text-align: center;
+  font-size: 85px;
+}
+
 
 #toc {
   width: 100%;
@@ -169,15 +204,26 @@ footer {
 #pod h2 {
   color: #000;
 }
+
+img.stroke {
+  max-width: 400px;
+  padding-top: 0px;
+  display: none;
+}
+
 #about, #tips {
+  margin: auto;
   width: 60%;
   float: right;
-  background-color: #fff;
   padding: 25px;
   margin-bottom: 20px;
   border-radius: 25px;
+  clear: both;
 }
 
+#tips {
+  width: 53%;
+}
 
 
 #inktoberpic {
@@ -195,13 +241,18 @@ footer {
 }*/
 
 #tips ul li {
-  list-style-type: circle;
+  list-style-image: url("../img/bullet-3.png");
   padding-bottom: 15px;
   margin-left: 30px;
 }
 
 
-#prompts ol li, #rules ol li {
+#prompts ol li {
+  list-style-type: decimal;
+  margin-left: 80px;
+}
+
+#rules ol li {
   list-style-type: decimal;
   margin-left: 30px;
 }
@@ -215,10 +266,13 @@ footer {
   font-size: 120px;
 }
 
+h2.display-prompt  {
+  padding-bottom: 0px;
+  line-height: 50px;
+}
+
 .display-prompt:hover {
-text-decoration: underline;
-text-decoration-style: dotted;
-text-decoration-color: #e2665a;
+  display: block;
 }
 
 #toc ul li {
@@ -241,6 +295,11 @@ ul.section a {
   font-family: 'Amatic SC', cursive;
   font-size: 35px;
 }
+
+/*#img2 {
+height: 400px;
+margin: auto;
+}*/
 /*#pen {
   filter: invert(100%);
   left: 10
@@ -255,7 +314,7 @@ ul.section a {
   background: red;
 }*/
 
-/* KYLE IMAGES
+/* KYLE IMAGES WITH CSS -- To add, enable ID and paste img div to html
 #img1 {
 width: 100%;
 margin-top: 150px;
