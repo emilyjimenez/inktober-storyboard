@@ -5,12 +5,12 @@ body {
   color: #757575;
   font-size: 18px;
   line-height: 32px;
-  /*background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
-  background-repeat: no-repeat, no-repeat; no-repeat;
-  background-position: 0% 15%, 80% 26%, 18% 34%;
-  background-size: auto, 20%, 20%;*/
-  /*background-image: url("../img/inksplotch.jpg");*/
+  background-image: url("../img/handTR2.png"), url("../img/face-down.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 10%, -10% 290%;
+  background-size: 30%, 20%;
 }
+
 
 p {
   padding-bottom: 10px;
@@ -53,12 +53,6 @@ h1 {
   color: #000000;
 }
 
-
-
-.parallax-container {
-  height: 300px;
-}
-
 #penimg {
   position: fixed;
   left: 0px;
@@ -69,30 +63,14 @@ h1 {
   z-index: 0;
 }
 
-#footerimg {
-  max-height: 400px;
-  min-height: 400px;
-  display: none;
-  position: relative;
-  z-index: -1;
-}
-
-footer {
-  position:absolute;
-  background-color: black;
-  padding: 25px;
-  padding-top: 20px;
-  z-index: -2;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
-  background-repeat: no-repeat, no-repeat; no-repeat;
+  /*background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 0% 3%, 95% 16%, 0% 27%;
-  background-size: 40%, 40%, 40%;
+  background-size: 40%, 40%, 40%;*/
 }
 
 .hover-color:hover {
@@ -111,7 +89,7 @@ footer {
 
 
 #rules {
-  width: 70%;
+  /*width: 70%;*/
   padding: 25px;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -154,13 +132,12 @@ img.stroke {
 }
 
 #about, #tips {
-  margin: auto;
-  width: 60%;
+  /*margin: auto;*/
+  /*width: 60%;*/
   float: right;
   padding: 25px;
   margin-bottom: 20px;
   border-radius: 25px;
-  clear: both;
 }
 
 #tips {
@@ -238,10 +215,8 @@ ul.section a {
   font-size: 35px;
 }
 
-/*#img2 {
-height: 400px;
-margin: auto;
-}*/
+
+
 /*#pen {
   filter: invert(100%);
   left: 10
@@ -256,42 +231,31 @@ margin: auto;
   background: red;
 }*/
 
-/* KYLE IMAGES WITH CSS -- To add, enable ID and paste img div to html
+/*background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
+background-repeat: no-repeat, no-repeat, no-repeat;
+background-position: 0% 3%, 95% 16%, 0% 27%;
+background-size: 40%, 40%, 40%;*/
+
+/*KYLE IMAGES WITH CSS -- To add, enable ID and paste img div to html*/
 #img1 {
-width: 100%;
+width: 400px;
 margin-top: 150px;
 }
-<div id="wrapper1" class="col-md-4">
-  <img id="img1" class="hover" src="img/katie-bear.png" alt="Ink drawing">
-  <p class="text">Drawing by: Katie Pikes</p>
-</div>
 
 #img2 {
 height: 400px;
 margin: auto;
 }
-<div class="wrapper col-md-4">
-  <img id="img2" class="hover" src="img/katie-diamond.png" alt="Ink drawing">
-  <p class="text">Drawing by: Katie Pikes</p>
-</div>
-
 
 #img3 {
-width: 350px;
-margin-top: 200px;
-}
-<div class="wrapper col-md-4">
-  <img id="img3" class="hover" src="img/katie-mountain.png" alt="Ink drawing">
-  <p class="text">Drawing by: Katie Pikes</p>
-</div>
-
-#img4 {
 width: 400px;
+margin-top: ;
 }
-<div class="wrapper col-md-4">
-  <img id="img4" class="hover"src="img/katie-biner.png" alt="Ink drawing">
-  <p class="text">Drawing by: Katie Pikes</p>
-</div>
+
+
+/*#img4 {
+width: 200px;
+}*/
 
 .wrapper p {
 position:relative;
@@ -305,17 +269,17 @@ visibility:hidden;
   font-size: 150%;
   font-weight: bold;
 }
-*/
+
 
 .our-name {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   color: #e2665a;
   font-family: 'Amatic SC', cursive;
-  font-size: 133%;
+  font-size: 30px;
 }
 
-.bubble {
+/*.bubble {
   border-style: solid;
   border-color: red;
   border-radius: 30px;
@@ -323,8 +287,48 @@ visibility:hidden;
   height: 350px;
   margin: 10px;
   opacity: 0.5;
+}*/
+
+.blurb {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .bubble:hover {
   opacity: 1.0;
+}
+
+.footer-spacing {
+  margin-left: 300px;
+  color: #f2f2f2;
+}
+
+
+
+#footerimg {
+  max-height: 400px;
+  min-height: 400px;
+  display: none;
+  position: relative;
+  z-index: -1;
+}
+
+footer {
+  position:absolute;
+  background-color: black;
+  padding: 25px;
+  padding-top: 20px;
+  z-index: -2;
+}
+
+h4.aboutHeadline {
+  text-align: right;
+  padding-right: 30px;
+  font-size: 80px;
+  z-index: 1;
 }
