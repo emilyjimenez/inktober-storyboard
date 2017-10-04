@@ -5,11 +5,15 @@ body {
   color: #757575;
   font-size: 18px;
   line-height: 32px;
-  background-image: url("../img/faceC.png"), url("../img/katie-diamond.png");;
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0% 15%, 80% 28%;
-  background-size: auto, 20%;
+  /*background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
+  background-repeat: no-repeat, no-repeat; no-repeat;
+  background-position: 0% 15%, 80% 26%, 18% 34%;
+  background-size: auto, 20%, 20%;*/
   /*background-image: url("../img/inksplotch.jpg");*/
+}
+
+p {
+  padding-bottom: 10px;
 }
 
 h3, h1, h4, h2 {
@@ -84,7 +88,11 @@ footer {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
+  background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
+  background-repeat: no-repeat, no-repeat; no-repeat;
+  background-position: 0% 3%, 95% 16%, 0% 27%;
+  background-size: 40%, 40%, 40%;
 }
 
 .hover-color:hover {
@@ -103,16 +111,24 @@ footer {
 
 
 #rules {
-  width: 60%;
-  float: left;
+  width: 70%;
   padding: 25px;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 #prompts {
-  width: 60%;
+  width: 70%;
   padding: 25px;
+  padding-bottom: 50px;
   margin-bottom: 20px;
+  margin: auto;
+  clear:both;
+}
+
+#prompts h3 {
+  text-align: center;
+  font-size: 85px;
 }
 
 
@@ -138,18 +154,18 @@ img.stroke {
 }
 
 #about, #tips {
+  margin: auto;
   width: 60%;
   float: right;
   padding: 25px;
   margin-bottom: 20px;
   border-radius: 25px;
-
-=======
-/*#pen {
-  filter: invert(100%);*/
->>>>>>> scroll
+  clear: both;
 }
 
+#tips {
+  width: 53%;
+}
 
 
 #inktoberpic {
@@ -167,13 +183,18 @@ img.stroke {
 }*/
 
 #tips ul li {
-  list-style-type: circle;
+  list-style-image: url("../img/bullet-3.png");
   padding-bottom: 15px;
   margin-left: 30px;
 }
 
 
-#prompts ol li, #rules ol li {
+#prompts ol li {
+  list-style-type: decimal;
+  margin-left: 80px;
+}
+
+#rules ol li {
   list-style-type: decimal;
   margin-left: 30px;
 }
