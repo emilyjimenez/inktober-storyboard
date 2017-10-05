@@ -167,7 +167,9 @@ function dailyPrompt() {
   var windowWidth = ($(window).width());
   var windowHeight = $(window).height()/1.25;
   $(window).scroll(function(event){
-    var docHeight = $(document).height();
+    var splatHeight = $(document).height();
+    var splatWidth = $(window).width();
+    console.log(splatWidth);
 
     var scrollTop = $(window).scrollTop();
     var scrollAmount = (scrollTop / (scrollHeight - windowHeight));
@@ -175,6 +177,7 @@ function dailyPrompt() {
     var moveTop = 10 + Math.round(Math.sin(scrollAmount * (Math.PI)/2) * windowHeight);
     var moveLeft = Math.round(Math.sin(scrollAmount * (Math.PI)) * windowWidth);
 
+    // START Splatter animation
     if (scrollAmount > 0.05 && scrollAmount < .07) {
       $("#splat1").fadeIn();
     }
@@ -182,12 +185,31 @@ function dailyPrompt() {
       $("#splat1").fadeOut();
     }
 
-    if (scrollAmount > 0.30 && scrollAmount < .40) {
+    if (scrollAmount > 0.15 && scrollAmount < .19) {
       $("#splat2").fadeIn();
     }
-    if (scrollAmount > .40) {
+    if (scrollAmount > .19) {
       $("#splat2").fadeOut();
     }
+
+    if (scrollAmount > 0.3 && scrollAmount < .40) {
+      $("#splat3").fadeIn();
+    }
+    if (scrollAmount > .40) {
+      $("#splat3").fadeOut();
+    }
+
+    if (scrollAmount > 0.5 && scrollAmount < .55) {
+      if (splatWidth > 2000) {
+        $("#splat4").removeClass("splat4-reg-window");
+        $("#splat4").addClass("splat4-big-window");
+      }
+      $("#splat4").fadeIn();
+    }
+    if (scrollAmount > .55) {
+      $("#splat4").fadeOut();
+    }
+    // END Splatter animation
 
 
     if (moveTop > 980) {
