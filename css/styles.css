@@ -82,13 +82,18 @@ h4 {
   font-size: 50px;
 }
 
-#mediabuttons {
+#socialbuttons {
   text-align: left;
   padding-top: 20px;
 }
 
+#socialbuttons a:hover {
+  text-decoration: none;
+}
+
+
 img.social {
-  width: 33px;
+  width: 12%;
 }
 
 a {
