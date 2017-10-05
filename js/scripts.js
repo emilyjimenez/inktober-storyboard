@@ -7,15 +7,12 @@ var m = n.getMonth();
 var d = n.getDate();
 //END Date Import part 1
 
+
 //FRONT END LOGIC - USER INTERFACE
 $(document).ready(function(){
-  // $('.parallax').parallax();
-
-//Kyle Testing Date Import part 2
-  document.getElementById("date").innerHTML = months[m] + " " + d + ", " + y; //Display current date
-//END part 2
-
-//Kyle change prompt on date part 1
+//Display current date
+  document.getElementById("date").innerHTML = months[m] + " " + d + ", " + y;
+//Change prompt on date
 function dailyPrompt() {
     var prompt;
     switch (new Date().getDate()) {
@@ -117,23 +114,17 @@ function dailyPrompt() {
     }
     document.getElementById("dayPrompt").innerHTML = prompt;
 }
-//END part 1
-//Kyle change prompt on date part 2
-  dailyPrompt(); //Call dailyPrompy function on current date
-//END part 2
+  dailyPrompt();
 
-
-  // START scrolling prompt boxes
+// START scrolling prompts
   var prompts = ["swift", "divided", "poison", "underwater", "long", "sword",
           "shy", "crooked", "screech", "gigantic", "run", "shattered",
           "teeming", "fierce", "mystery", "fat", "graceful", "filthy",
           "cloud", "deep", "furious", "trail", "juicy", "blind", "ship",
           "squeak", "climb", "fall", "united", "found", "mask"];
 
-
   var todayDate = new Date();
   var dateNumber = todayDate.getDate();
-
 
   for (var index = 0; index < dateNumber; index++) {
     if ( index % 2 === 0) {
@@ -161,8 +152,9 @@ function dailyPrompt() {
       }
     });
   });
+//END scrolling prompts
 
-
+//START scrolling pen image
   var scrollHeight = $(document).height();
   var windowWidth = ($(window).width());
   var windowHeight = $(window).height()/1.25;
@@ -209,10 +201,11 @@ function dailyPrompt() {
     }
   });
 
+//Display prompt brushstroke underline
   $(".display-prompt").mouseover(function(){
     $(".stroke").fadeIn(600);
   });
-  //IMG HOVER TEXT CAPTION
+//Image Hover = Display Artist Name
   $('.hover').mouseover(function() {
     $('.img-text').css("visibility","visible");
   });
@@ -220,9 +213,8 @@ function dailyPrompt() {
   $('.hover').mouseout(function() {
     $('.img-text').css("visibility","hidden");
   });
-  // END IMAGE HOVER
 
-
+//Display prompt list & hide scrolling prompts
   $(".prompt-link").click(function(){
     $("#all-boxes").fadeOut();
     $("#prompts").fadeIn();
@@ -232,6 +224,4 @@ function dailyPrompt() {
     $("#prompts").fadeOut();
     $("#all-boxes").fadeIn();
   });
-
-
 });
