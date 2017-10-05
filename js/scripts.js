@@ -201,6 +201,22 @@ function dailyPrompt() {
     }
   });
 
+  $(window).scroll(function() {
+    var aboutPosition = $("#about").offset().top;
+    var windowHeight = $(window).height();
+    var windowST = $(window).scrollTop();
+
+    if (windowST > (aboutPosition - (windowHeight/2))) {
+      $("#sticky-button").fadeIn();
+    }
+      var boxOuterHeight = $(this).outerHeight();
+      var windowFractionHeight = $(window).height()*0.66;
+      var windowScrollTop = $(window).scrollTop();
+
+    });
+
+
+
 //Display prompt brushstroke underline
   $(".display-prompt").mouseover(function(){
     $(".stroke").fadeIn(600);
