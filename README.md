@@ -2,7 +2,7 @@
 
 #### _Inktober Storyboard, 10.03.2017_
 
-#### By _**Emily Wells-Jimenez, Kyle Ebersole, Kimberly Bordon, Valia Dempsey, Brandon Kudo**_
+#### By _**Emily Wells Jimenez, Kyle Ebersole, Kimberly Bordon, Valia Dempsey, Brandon Kudo**_
 
 ## Description
 
