@@ -287,7 +287,7 @@ position:relative;
 visibility:hidden;
 }
 
-.img-text {
+.img-text1, .img-text2, .img-text3 {
   text-align: center;
   font-family: 'Amatic SC', cursive;
   color: #e2665a;
@@ -368,6 +368,10 @@ h4.aboutHeadline {
 
 .splat2-big-window {
   left: 1600px;
+}
+
+.splat2-xbig-window {
+  left: 2000px;
 }
 
 #splat3 {

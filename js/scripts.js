@@ -178,7 +178,10 @@ function dailyPrompt() {
     }
 
     if (scrollAmount > 0.15 && scrollAmount < .19) {
-      if (splatWidth > 2000) {
+      if (splatWidth > 2400) {
+        $("#splat2").removeClass("splat2-reg-window");
+        $("#splat2").addClass("splat2-xbig-window");
+      } else if (splatWidth > 1800) {
         $("#splat2").removeClass("splat2-reg-window");
         $("#splat2").addClass("splat2-big-window");
       }
@@ -196,7 +199,7 @@ function dailyPrompt() {
     }
 
     if (scrollAmount > 0.5 && scrollAmount < .55) {
-      if (splatWidth > 2000) {
+      if (splatWidth > 1800) {
         $("#splat4").removeClass("splat4-reg-window");
         $("#splat4").addClass("splat4-big-window");
       }
@@ -207,7 +210,7 @@ function dailyPrompt() {
     }
     // END Splatter animation
 
-
+    //START Pen scroller
     if (moveTop > 980) {
       $("#penimg").css("top", 980);
     } else {
@@ -225,6 +228,8 @@ function dailyPrompt() {
     if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
       $("#footerimg").fadeIn("slow");
     }
+    //END
+
   });
 
 //Display prompt brushstroke underline
@@ -232,12 +237,36 @@ function dailyPrompt() {
     $(".stroke").fadeIn(600);
   });
 //Image Hover = Display Artist Name
-  $('.hover').mouseover(function() {
-    $('.img-text').css("visibility","visible");
+  // $('.hover').mouseover(function() {
+  //   $('.img-text').css("visibility","visible");
+  // });
+  //
+  // $('.hover').mouseout(function() {
+  //   $('.img-text').css("visibility","hidden");
+  // });
+
+  $('.hover1').mouseover(function() {
+    $('.img-text1').css("visibility","visible");
   });
 
-  $('.hover').mouseout(function() {
-    $('.img-text').css("visibility","hidden");
+  $('.hover1').mouseout(function() {
+    $('.img-text1').css("visibility","hidden");
+  });
+
+  $('.hover2').mouseover(function() {
+    $('.img-text2').css("visibility","visible");
+  });
+
+  $('.hover2').mouseout(function() {
+    $('.img-text2').css("visibility","hidden");
+  });
+
+  $('.hover3').mouseover(function() {
+    $('.img-text3').css("visibility","visible");
+  });
+
+  $('.hover3').mouseout(function() {
+    $('.img-text3').css("visibility","hidden");
   });
 
 //Display prompt list & hide scrolling prompts
