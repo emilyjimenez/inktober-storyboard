@@ -159,7 +159,9 @@ function dailyPrompt() {
   var windowWidth = ($(window).width());
   var windowHeight = $(window).height()/1.25;
   $(window).scroll(function(event){
-    var docHeight = $(document).height();
+    var splatHeight = $(document).height();
+    var splatWidth = $(window).width();
+    console.log(splatWidth);
 
     var scrollTop = $(window).scrollTop();
     var scrollAmount = (scrollTop / (scrollHeight - windowHeight));
@@ -167,6 +169,7 @@ function dailyPrompt() {
     var moveTop = 10 + Math.round(Math.sin(scrollAmount * (Math.PI)/2) * windowHeight);
     var moveLeft = Math.round(Math.sin(scrollAmount * (Math.PI)) * windowWidth);
 
+    // START Splatter animation
     if (scrollAmount > 0.05 && scrollAmount < .07) {
       $("#splat1").fadeIn();
     }
@@ -174,14 +177,40 @@ function dailyPrompt() {
       $("#splat1").fadeOut();
     }
 
-    if (scrollAmount > 0.30 && scrollAmount < .40) {
+    if (scrollAmount > 0.15 && scrollAmount < .19) {
+      if (splatWidth > 2400) {
+        $("#splat2").removeClass("splat2-reg-window");
+        $("#splat2").addClass("splat2-xbig-window");
+      } else if (splatWidth > 1800) {
+        $("#splat2").removeClass("splat2-reg-window");
+        $("#splat2").addClass("splat2-big-window");
+      }
       $("#splat2").fadeIn();
     }
-    if (scrollAmount > .40) {
+    if (scrollAmount > .19) {
       $("#splat2").fadeOut();
     }
 
+    if (scrollAmount > 0.3 && scrollAmount < .40) {
+      $("#splat3").fadeIn();
+    }
+    if (scrollAmount > .40) {
+      $("#splat3").fadeOut();
+    }
 
+    if (scrollAmount > 0.5 && scrollAmount < .55) {
+      if (splatWidth > 1800) {
+        $("#splat4").removeClass("splat4-reg-window");
+        $("#splat4").addClass("splat4-big-window");
+      }
+      $("#splat4").fadeIn();
+    }
+    if (scrollAmount > .55) {
+      $("#splat4").fadeOut();
+    }
+    // END Splatter animation
+
+    //START Pen scroller
     if (moveTop > 980) {
       $("#penimg").css("top", 980);
     } else {
@@ -199,6 +228,8 @@ function dailyPrompt() {
     if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
       $("#footerimg").fadeIn("slow");
     }
+    //END
+
   });
 
 //Display prompt brushstroke underline
@@ -206,12 +237,36 @@ function dailyPrompt() {
     $(".stroke").fadeIn(600);
   });
 //Image Hover = Display Artist Name
-  $('.hover').mouseover(function() {
-    $('.img-text').css("visibility","visible");
+  // $('.hover').mouseover(function() {
+  //   $('.img-text').css("visibility","visible");
+  // });
+  //
+  // $('.hover').mouseout(function() {
+  //   $('.img-text').css("visibility","hidden");
+  // });
+
+  $('.hover1').mouseover(function() {
+    $('.img-text1').css("visibility","visible");
   });
 
-  $('.hover').mouseout(function() {
-    $('.img-text').css("visibility","hidden");
+  $('.hover1').mouseout(function() {
+    $('.img-text1').css("visibility","hidden");
+  });
+
+  $('.hover2').mouseover(function() {
+    $('.img-text2').css("visibility","visible");
+  });
+
+  $('.hover2').mouseout(function() {
+    $('.img-text2').css("visibility","hidden");
+  });
+
+  $('.hover3').mouseover(function() {
+    $('.img-text3').css("visibility","visible");
+  });
+
+  $('.hover3').mouseout(function() {
+    $('.img-text3').css("visibility","hidden");
   });
 
 //Display prompt list & hide scrolling prompts

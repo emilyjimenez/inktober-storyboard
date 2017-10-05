@@ -292,7 +292,7 @@ position:relative;
 visibility:hidden;
 }
 
-.img-text {
+.img-text1, .img-text2, .img-text3 {
   text-align: center;
   font-family: 'Amatic SC', cursive;
   color: #e2665a;
@@ -361,8 +361,45 @@ h4.aboutHeadline {
 
 #splat2 {
   position: absolute;
-  left: 1500px;
+  top: 1200px;
   height: 15%;
   z-index: -1;
   display: none;
+}
+
+.splat2-reg-window {
+  left: 1400px;
+}
+
+.splat2-big-window {
+  left: 1600px;
+}
+
+.splat2-xbig-window {
+  left: 2000px;
+}
+
+#splat3 {
+  position: absolute;
+  top: 2000px;
+  left: 100px;
+  height: 20%;
+  z-index: -1;
+  display: none;
+}
+
+#splat4 {
+  position: absolute;
+  top: 3000px;
+  height: 25%;
+  z-index: -1;
+  display: none;
+}
+
+.splat4-reg-window {
+  left: 1400px;
+}
+
+.splat4-big-window {
+  left: 1600px;
 }
