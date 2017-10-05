@@ -299,6 +299,15 @@ visibility:hidden;
   font-size: 150%;
   font-weight: bold;
 }
+
+.img-text2 {
+  padding-left: 30px;
+}
+
+.img-text3 {
+  padding-left: 70px;
+  padding-top: 20px;
+}
 /*END Images*/
 
 /*Footer Content*/
