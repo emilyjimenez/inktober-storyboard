@@ -5,10 +5,10 @@ body {
   color: #757575;
   font-size: 18px;
   line-height: 32px;
-  background-image: url("../img/handTR2.png"), url("../img/face-down.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 100% 10%, -10% 290%;
-  background-size: 30%, 20%;
+  background-image: url("../img/handTR2.png"), url("../img/face-down.png"), url("../img/greek-trans.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 100% 10%, -10% 290%, 100% 800%;
+  background-size: 30%, 20%, auto;
 }
 /*START prompt-box styling*/
 .boxes {
@@ -360,12 +360,11 @@ margin-top: 150px;
 
 #img2 {
 height: 400px;
-margin: auto;
+/*margin: auto;*/
 }
 
 #img3 {
 width: 400px;
-margin-top: ;
 }
 
 

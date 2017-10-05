@@ -208,6 +208,10 @@ function dailyPrompt() {
       $("#footerimg").fadeIn("slow");
     }
   });
+
+  $(".display-prompt").mouseover(function(){
+    $(".stroke").fadeIn(600);
+  });
   //IMG HOVER TEXT CAPTION
   $('.hover').mouseover(function() {
     $('.text').css("visibility","visible");
