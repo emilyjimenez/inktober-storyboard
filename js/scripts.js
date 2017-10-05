@@ -178,7 +178,10 @@ function dailyPrompt() {
     }
 
     if (scrollAmount > 0.15 && scrollAmount < .19) {
-      if (splatWidth > 1800) {
+      if (splatWidth > 2400) {
+        $("#splat2").removeClass("splat2-reg-window");
+        $("#splat2").addClass("splat2-xbig-window");
+      } else if (splatWidth > 1800) {
         $("#splat2").removeClass("splat2-reg-window");
         $("#splat2").addClass("splat2-big-window");
       }
