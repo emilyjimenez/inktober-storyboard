@@ -122,6 +122,7 @@ function dailyPrompt() {
   dailyPrompt(); //Call dailyPrompy function on current date
 //END part 2
 
+
   // START scrolling prompt boxes
   var prompts = ["swift", "divided", "poison", "underwater", "long", "sword",
           "shy", "crooked", "screech", "gigantic", "run", "shattered",
@@ -129,8 +130,10 @@ function dailyPrompt() {
           "cloud", "deep", "furious", "trail", "juicy", "blind", "ship",
           "squeak", "climb", "fall", "united", "found", "mask"];
 
+
   var todayDate = new Date();
   var dateNumber = todayDate.getDate();
+
 
   for (var index = 0; index < dateNumber; index++) {
     if ( index % 2 === 0) {
@@ -140,7 +143,7 @@ function dailyPrompt() {
     } else {
       $("#odd-boxes").append("<div class='prompt-box'>" +
                                + (index + 1) + ". " + prompts[index] +
-                              "</div>");
+                             "</div>");
     }
   }
 
@@ -148,9 +151,9 @@ function dailyPrompt() {
     $(".prompt-box").each(function() {
       var boxTopPosition = $(this).offset().top;
       var boxOuterHeight = $(this).outerHeight();
-      var windowHalfHeight = $(window).height()/2;
+      var windowFractionHeight = $(window).height()*0.66;
       var windowScrollTop = $(window).scrollTop();
-      if (windowScrollTop > (boxTopPosition+boxOuterHeight-windowHalfHeight)){
+      if (windowScrollTop > (boxTopPosition+boxOuterHeight-windowFractionHeight)){
         $(this).animate({
           opacity: 1,
         }, 1200, function() {
@@ -165,6 +168,7 @@ function dailyPrompt() {
   var windowHeight = $(window).height()/1.25;
   $(window).scroll(function(event){
     var docHeight = $(document).height();
+
     var scrollTop = $(window).scrollTop();
     var scrollAmount = (scrollTop / (scrollHeight - windowHeight));
     console.log(scrollAmount);
@@ -197,19 +201,14 @@ function dailyPrompt() {
       $("#penimg").css("left", Math.round(Math.sin(scrollAmount * (Math.PI)) * windowWidth));
     }
     if($(window).scrollTop() + $(window).height() > $(document).height() - 750) {
-        $("#penimg").css("top", 750);
-        $("#penimg").css("left", 150);
-      }
-      if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
-        $("#footerimg").fadeIn("slow");
-      }
-
+      $("#penimg").css("top", 750);
+      $("#penimg").css("left", 150);
+    }
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+      $("#footerimg").fadeIn("slow");
+    }
   });
-  $(".display-prompt").mouseover(function(){
-    $(".stroke").fadeIn(600);
-  });
-
-  // IMG HOVER TEXT CAPTION
+  //IMG HOVER TEXT CAPTION
   $('.hover').mouseover(function() {
     $('.text').css("visibility","visible");
   });
@@ -219,14 +218,16 @@ function dailyPrompt() {
   });
   // END IMAGE HOVER
 
+
   $(".prompt-link").click(function(){
     $("#all-boxes").fadeOut();
     $("#prompts").fadeIn();
-  })
+  });
 
   $(".prompt-link2").click(function(){
     $("#prompts").fadeOut();
     $("#all-boxes").fadeIn();
-  })
+  });
+
 
 });

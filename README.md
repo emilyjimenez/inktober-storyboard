@@ -40,6 +40,7 @@ _If you have any questions, or would like to provide feedback, please contact Ky
 * _Javascript_
 * _JQuery_
 * _Juicer???_
+* https://github.com/daneden/animate.css
 
 ### License
 

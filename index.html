@@ -10,11 +10,12 @@
     <link href="css/juicer.css" media="all" rel="stylesheet" type="text/css">
     <link href="https://assets.juicer.io/application-ca4b223053165afac7c29399220005bb6aa38e5059003c33438c283c2b53cd18.css" rel="stylesheet" type="text/css">
     <script src="js/juicer.js" type="text/javascript"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Below is for the shaking animation. -->
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Inktober</title>
   </head>
@@ -34,6 +35,7 @@
 
     <div id="pod">
       <h2>Prompt of the Day:</h2>
+     <!-- Currently the date MUST display somewhere for the daily prompt to work because it is reliant on it existing -->
       <h3 id="date"></h3>
       <h2 id="dayPrompt" class="display-prompt"></h2>
       <img class="stroke" src="img/strokeA.png">
@@ -43,12 +45,18 @@
       <div class="container">
         <img id="penimg" src="img/penE.png">
 
+        <!-- <div class="well" id="toc"> -->
+
+
+
+
+        <!-- <div class="well"> -->
         <div class="row">
-          <div id="wrapper1" class="col-md-4">
+           <div id="wrapper1" class="col-md-4">
             <img id="img1" class="hover" src="img/faceC.png" alt="Ink drawing">
             <p class="text">Drawing by: Valia Dempsey</p>
           </div>
-          <div id="about" class="section scrollspy col-md-6">
+          <div id="about" class="section scrollspy">
             <h3>About Inktober</h3>
             <p>
               Every October, artists from all over the world participate in the month long drawing challenge by doing one ink drawing a day the entire month. There is a prompt for each day of the challenge that outlines a theme for the participant can use to base their drawings. Inktober started in 2009 created by Jake Parker, an illustrator whose work includes animated films, comics, and picture books.
@@ -78,9 +86,11 @@
             </p>
           </div>
         </div>
+        <!-- </div> -->
 
+        <!-- <div class="well"> -->
         <div class="row">
-          <div id="rules" class="section scrollspy col-md-6">
+          <div id="rules" class="section scrollspy">
             <h3>Rules</h3>
             <ol>
               <li>Make a drawing in ink</li>
@@ -88,10 +98,10 @@
               <li>Hashtag it with <a href="https://www.instagram.com/explore/tags/inktober/?hl=en">#inktober</a> and <a href="https://www.instagram.com/explore/tags/inktober2017/?hl=en">#inktober2017</a></li>
               <li>Repeat everyday for the month of October</li>
             </ol>
-          </div>
-          <div class="wrapper col-md-4">
-            <img id="img2" class="hover" src="img/katie-diamond.png" alt="Ink drawing">
-            <p class="text">Drawing by: Katie Pikes</p>
+            <div class="wrapper col-md-4">
+              <img id="img2" class="hover" src="img/katie-diamond.png" alt="Ink drawing">
+              <p class="text">Drawing by: Katie Pikes</p>
+            </div>
           </div>
         </div>
         <!-- </div> -->
@@ -102,7 +112,7 @@
             <img id="img3" class="hover" src="img/katie-circle.png" alt="Ink drawing">
             <p class="text">Drawing by: Katie Pikes</p>
           </div>
-          <div id="tips" class="section scrollspy col-md-6">
+          <div id="tips" class="section scrollspy">
             <h3>Tips</h3>
             <ul>
               <li>You don’t have to follow the prompts, but they help</li>
@@ -147,7 +157,6 @@
               </div>
             </div>
           </div>
-
 
         <!-- <div class="well"> -->
         <div class="row">
@@ -202,6 +211,7 @@
               <div class="col-md-12">
                 <h4><span class="prompt-link2">Go Back</span></h4>
               </div>
+              
             </div>
           </div>
         </div>
@@ -262,6 +272,6 @@
         </div>
       </div>
     </footer>
-    <img src="img/inkfooteranimation.png" alt="ink spots animation" id="footerimg">
+    <img src="img/inkfooteranimation.png" alt="ink spots animation" id="footerimg"></img>
   </body>
 </html>

@@ -10,6 +10,66 @@ body {
   background-position: 100% 10%, -10% 290%;
   background-size: 30%, 20%;
 }
+/*START prompt-box styling*/
+.boxes {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.first-odd-box {
+  height: 100px;
+  width: 100px;
+  opacity: 0.0;
+}
+.prompt-box {
+  height: 100px;
+  width: 200px;
+  margin-bottom: 100px;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
+  opacity: 0.0;
+  padding: 50px 0;
+}
+
+.prompt-info {
+  width: 100%;
+  font-weight: normal;
+}
+
+.prompt-link, .prompt-link2 {
+  color: #e2665a;
+  font-weight: bold;
+}
+
+.prompt-link:hover, .prompt-link2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#prompts-display {
+  /*min-height: 600px;*/
+}
+
+/*#prompts {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+#prompts h3 {
+  text-align: center;
+}*/
+
+.list-padding {
+  padding: 0 60px;
+}
+
+/*END prompt-box styling*/
 
 p {
   padding-bottom: 10px;
@@ -38,18 +98,19 @@ img.social {
   width: 33px;
 }
 
-a {
-  color: #e2665a;
-}
-h4 {
-  text-align: center;
-  font-size: 50px;
-}
-
 h1 {
   font-size: 250px;
   text-align: center;
   color: #000000;
+}
+
+a {
+  color: #e2665a;
+}
+
+h4 {
+  text-align: center;
+  font-size: 50px;
 }
 
 #penimg {
@@ -60,6 +121,30 @@ h1 {
   width: 100px;
   transition-duration: 500ms;
   z-index: 0;
+}
+
+#footerimg {
+  max-height: 400px;
+  min-height: 400px;
+  display: none;
+  position: relative;
+  z-index: -1;
+}
+
+footer {
+  position:absolute;
+  background-color: black;
+  padding: 25px;
+  padding-top: 20px;
+  z-index: -2;
+}
+
+.container-prompts{
+  padding-right: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .container {
@@ -80,11 +165,6 @@ h1 {
   color: #000000;
   padding-top: 60px;
 }
-
-/*.well {
-  background-color: black;
-  color: white;
-}*/
 
 
 #rules {
@@ -384,5 +464,3 @@ h4.aboutHeadline {
   z-index: -1;
   display: none;
 }
-
-/*END background splatter*/
