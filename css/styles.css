@@ -357,10 +357,17 @@ h4.aboutHeadline {
 #splat2 {
   position: absolute;
   top: 1200px;
-  left: 1400px;
   height: 15%;
   z-index: -1;
   display: none;
+}
+
+.splat2-reg-window {
+  left: 1400px;
+}
+
+.splat2-big-window {
+  left: 1600px;
 }
 
 #splat3 {
