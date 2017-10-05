@@ -5,11 +5,12 @@ body {
   color: #757575;
   font-size: 18px;
   line-height: 32px;
-  background-image: url("../img/handTR2.png"), url("../img/face-down.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 100% 10%, -10% 290%;
-  background-size: 30%, 20%;
+  background-image: url("../img/handTR2.png"), url("../img/face-down.png"), url("../img/greek-trans.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 100% 10%, -10% 290%, 100% 800%;
+  background-size: 30%, 20%, auto;
 }
+
 /*START prompt-box styling*/
 .boxes {
   margin-left: 0;
@@ -17,11 +18,13 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+
 .first-odd-box {
   height: 100px;
   width: 100px;
   opacity: 0.0;
 }
+
 .prompt-box {
   height: 100px;
   width: 200px;
@@ -49,44 +52,34 @@ body {
   text-decoration: underline;
   cursor: pointer;
 }
-
-#prompts-display {
-  /*min-height: 600px;*/
-}
-
-/*#prompts {
-  width: 100%;
-  padding: 25px;
-  margin-bottom: 20px;
-  display: none;
-}
-
-#prompts h3 {
-  text-align: center;
-}*/
-
-.list-padding {
-  padding: 0 60px;
-}
-
 /*END prompt-box styling*/
 
 p {
   padding-bottom: 10px;
 }
 
-h3, h1, h4, h2 {
+h1, h2, h3, h4 {
   font-family: 'Amatic SC', cursive;
   color: #e2665a;
   padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 250px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 70px;
 }
 
 h3 {
   font-size: 60px;
 }
 
-h2 {
-  font-size: 70px;
+h4 {
+  text-align: center;
+  font-size: 50px;
 }
 
 #mediabuttons {
@@ -98,19 +91,8 @@ img.social {
   width: 33px;
 }
 
-h1 {
-  font-size: 250px;
-  text-align: center;
-  color: #000000;
-}
-
 a {
   color: #e2665a;
-}
-
-h4 {
-  text-align: center;
-  font-size: 50px;
 }
 
 #penimg {
@@ -120,41 +102,13 @@ h4 {
   height: 100px;
   width: 100px;
   transition-duration: 500ms;
-  z-index: 0;
-}
-
-#footerimg {
-  max-height: 400px;
-  min-height: 400px;
-  display: none;
-  position: relative;
-  z-index: -1;
-}
-
-footer {
-  position:absolute;
-  background-color: black;
-  padding: 25px;
-  padding-top: 20px;
-  z-index: -2;
-}
-
-.container-prompts{
-  padding-right: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  z-index: 3;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  /*background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0% 3%, 95% 16%, 0% 27%;
-  background-size: 40%, 40%, 40%;*/
 }
 
 .hover-color:hover {
@@ -166,9 +120,7 @@ footer {
   padding-top: 60px;
 }
 
-
 #rules {
-  /*width: 70%;*/
   padding: 25px;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -223,7 +175,6 @@ footer {
   text-decoration: underline;
   cursor: pointer;
 }
-
 /*END scrolling boxes*/
 
 #toc {
@@ -231,12 +182,19 @@ footer {
   text-align: center;
   padding: 20px;
   font-family: 'Amatic SC', cursive;
+  margin: auto;
+}
+
+#toc ul li {
+  font-size: 20px;
+  display: inline;
 }
 
 #pod {
   padding: 50px;
   text-align: center;
 }
+
 #pod h2 {
   color: #000;
 }
@@ -248,8 +206,6 @@ img.stroke {
 }
 
 #about, #tips {
-  /*margin: auto;*/
-  /*width: 60%;*/
   float: right;
   padding: 25px;
   margin-bottom: 20px;
@@ -260,6 +216,11 @@ img.stroke {
   width: 53%;
 }
 
+#tips ul li {
+  list-style-image: url("../img/bullet-3.png");
+  padding-bottom: 15px;
+  margin-left: 30px;
+}
 
 #inktoberpic {
   width: 150px;
@@ -271,17 +232,6 @@ img.stroke {
   clear: both;
 }
 
-/*.row {
-  padding: 25px;
-}*/
-
-#tips ul li {
-  list-style-image: url("../img/bullet-3.png");
-  padding-bottom: 15px;
-  margin-left: 30px;
-}
-
-
 #prompts ol li {
   list-style-type: decimal;
   margin-left: 80px;
@@ -290,10 +240,6 @@ img.stroke {
 #rules ol li {
   list-style-type: decimal;
   margin-left: 30px;
-}
-
-.redcolor {
-  color: #e2665a;
 }
 
 .display-prompt {
@@ -310,15 +256,6 @@ h2.display-prompt  {
   display: block;
 }
 
-#toc ul li {
-  font-size: 20px;
-  display: inline;
-}
-
-#toc {
-  margin: auto;
-}
-
 ul.section {
   text-align: center;
   font-family: 'Amatic SC', cursive;
@@ -331,28 +268,7 @@ ul.section a {
   font-size: 35px;
 }
 
-
-
-/*#pen {
-  filter: invert(100%);
-  left: 10
-}*/
-
-/*.inner {
-  width: 150px;
-  height: 100px;
-  position: fixed;
-  top: 20%;
-  left: 10%;
-  background: red;
-}*/
-
-/*background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
-background-repeat: no-repeat, no-repeat, no-repeat;
-background-position: 0% 3%, 95% 16%, 0% 27%;
-background-size: 40%, 40%, 40%;*/
-
-/*KYLE IMAGES WITH CSS -- To add, enable ID and paste img div to html*/
+/*IMAGES*/
 #img1 {
 width: 400px;
 margin-top: 150px;
@@ -360,33 +276,27 @@ margin-top: 150px;
 
 #img2 {
 height: 400px;
-margin: auto;
 }
 
 #img3 {
 width: 400px;
-margin-top: ;
 }
-
-
-/*#img4 {
-width: 200px;
-}*/
 
 .wrapper p {
 position:relative;
 visibility:hidden;
 }
 
-.text {
+.img-text {
   text-align: center;
   font-family: 'Amatic SC', cursive;
   color: #e2665a;
   font-size: 150%;
   font-weight: bold;
 }
+/*END Images*/
 
-
+/*Footer Content*/
 .our-name {
   text-align: left;
   font-weight: bold;
@@ -394,16 +304,6 @@ visibility:hidden;
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
 }
-
-/*.bubble {
-  border-style: solid;
-  border-color: red;
-  border-radius: 30px;
-  background-color: white;
-  height: 350px;
-  margin: 10px;
-  opacity: 0.5;
-}*/
 
 .blurb {
   font-size: 20px;
@@ -413,10 +313,6 @@ visibility:hidden;
 .description {
   font-size: 16px;
   line-height: 28px;
-}
-
-.bubble:hover {
-  opacity: 1.0;
 }
 
 .footer-spacing {
@@ -429,7 +325,7 @@ visibility:hidden;
   min-height: 400px;
   display: none;
   position: relative;
-  z-index: -1;
+  z-index: 2;
 }
 
 footer {
@@ -437,7 +333,7 @@ footer {
   background-color: black;
   padding: 25px;
   padding-top: 20px;
-  z-index: -2;
+  z-index: 1;
 }
 
 h4.aboutHeadline {
@@ -446,6 +342,7 @@ h4.aboutHeadline {
   font-size: 80px;
   z-index: 1;
 }
+/*END Footer*/
 
 /*START background splatter*/
 #splat1 {
