@@ -82,13 +82,18 @@ h4 {
   font-size: 50px;
 }
 
-#mediabuttons {
+#socialbuttons {
   text-align: left;
   padding-top: 20px;
 }
 
+#socialbuttons a:hover {
+  text-decoration: none;
+}
+
+
 img.social {
-  width: 33px;
+  width: 12%;
 }
 
 a {
@@ -362,6 +367,7 @@ h4.aboutHeadline {
   display: none;
 }
 
+
 .splat2-reg-window {
   left: 1400px;
 }
@@ -397,4 +403,20 @@ h4.aboutHeadline {
 
 .splat4-big-window {
   left: 1600px;
+}
+
+#sticky-button {
+    position: sticky;
+    bottom: 30px;
+    margin-left: 90%;
+    display: none;
+}
+
+#sticky-button a {
+  color: #000;
+}
+
+#sticky-button a:hover {
+  color: #e2665a;
+
 }
