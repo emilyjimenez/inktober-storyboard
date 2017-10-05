@@ -215,7 +215,9 @@ function dailyPrompt() {
 
     });
 
-
+// $("#stickybutton").click(function(){
+//   $()
+// });
 
 //Display prompt brushstroke underline
   $(".display-prompt").mouseover(function(){

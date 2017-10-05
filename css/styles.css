@@ -373,3 +373,11 @@ h4.aboutHeadline {
     margin-left: 90%;
     display: none;
 }
+
+#sticky-button a {
+  color: #000;
+}
+
+#sticky-button a:hover {
+  color: #e2665a;
+}
