@@ -178,7 +178,7 @@ function dailyPrompt() {
     }
 
     if (scrollAmount > 0.15 && scrollAmount < .19) {
-      if (splatWidth > 2000) {
+      if (splatWidth > 1800) {
         $("#splat2").removeClass("splat2-reg-window");
         $("#splat2").addClass("splat2-big-window");
       }
@@ -196,7 +196,7 @@ function dailyPrompt() {
     }
 
     if (scrollAmount > 0.5 && scrollAmount < .55) {
-      if (splatWidth > 2000) {
+      if (splatWidth > 1800) {
         $("#splat4").removeClass("splat4-reg-window");
         $("#splat4").addClass("splat4-big-window");
       }
