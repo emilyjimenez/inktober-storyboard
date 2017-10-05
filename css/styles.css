@@ -71,7 +71,6 @@ body {
 
 /*END prompt-box styling*/
 
-
 p {
   padding-bottom: 10px;
 }
@@ -151,7 +150,7 @@ footer {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 60%;
   /*background-image: url("../img/faceC.png"), url("../img/katie-diamond.png"), url("../img/katie-circle.png");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 0% 3%, 95% 16%, 0% 27%;
@@ -182,6 +181,7 @@ footer {
   margin-bottom: 20px;
   margin: auto;
   clear:both;
+  display: none;
 }
 
 #prompts h3 {
@@ -189,6 +189,42 @@ footer {
   font-size: 85px;
 }
 
+/*START scrolling boxes*/
+.first-odd-box {
+  height: 100px;
+  width: 100px;
+  opacity: 0.0;
+}
+.prompt-box {
+  height: 100px;
+  width: 200px;
+  margin-bottom: 100px;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: center;
+  opacity: 0.0;
+  padding: 50px 0;
+}
+
+.prompt-info {
+  width: 100%;
+  font-weight: normal;
+}
+
+.prompt-link, .prompt-link2 {
+   color: #e2665a;
+   font-weight: bold;
+ }
+
+.prompt-link:hover, .prompt-link2:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*END scrolling boxes*/
 
 #toc {
   width: 100%;
@@ -388,8 +424,6 @@ visibility:hidden;
   color: #f2f2f2;
 }
 
-
-
 #footerimg {
   max-height: 400px;
   min-height: 400px;
@@ -413,4 +447,20 @@ h4.aboutHeadline {
   z-index: 1;
 }
 
-/*test*/
+/*START background splatter*/
+#splat1 {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+  height: 10%;
+  z-index: -1;
+  display: none;
+}
+
+#splat2 {
+  position: absolute;
+  left: 1500px;
+  height: 15%;
+  z-index: -1;
+  display: none;
+}
